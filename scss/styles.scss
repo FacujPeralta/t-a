@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: initial;
 }
 .inicio{
     background-color: #0C356A;
@@ -30,6 +31,13 @@
 
         }
 }
+h1{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    align-self: center;
+    font-family: initial;
+}
 .ordenador{
     display: flex;
     flex-direction: row;
@@ -53,19 +61,20 @@
         margin: 10px;
         list-style: none;
         text-decoration: none;
+        text-align: center;
         li a{
             color:black;
             padding: 30px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            text-align: center;
             justify-content: center;
             margin: 20px;
             list-style: none;
             text-decoration: none;
             &:hover{
                 color: #585b61;
-                padding: 25px;
             }
         }
     }
@@ -85,11 +94,7 @@
         align-self: center;
     }
 }
-.image-container {
-    position: relative;
-  }
-  
-  .overlay-text {
+.overlay-text {
     position: relative;
     top:30%;
     left: 25%; 
@@ -109,7 +114,48 @@
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
 }
-// ACA ARRANCA LA PARTE PRODUCTOS
+.frente{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 25px;
+    background-color: #f3f3f3;
+    .img_inicio{
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        .img-modi{
+            width: 650px;
+            display: flex;
+            flex-direction: column;
+            .p{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 25px;
+                width:450px;
+                height: 250px;
+                background-color: #F5F7F8;
+            }
+        }
+    }
+    .text{
+        display: flex;
+        flex-direction: row;
+        p{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 25px;
+            width:350px;
+            background-color: #F5F7F8;
+        }
+    }
+
+}
+
+// È qui che inizia la parte dei prodotti
 .tarjetas{
     margin: 20px;
     display: flex;
@@ -136,6 +182,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 transition: transform 0.3s;
+                cursor: pointer;
                 &:hover{
                     transform: scale(1.2);
                 }
@@ -161,4 +208,50 @@
             }
     }
 }
-//mitre 2661 entre bv villagas y guemes $5000 consulta $7000 placa sangre $10.000
+
+//Parte Contactos
+.formulario-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25rem;
+    margin: 15px auto;
+    padding: 25px;
+    background-color: #f3f3f3;
+    width: 800px;
+    height: 850px;
+    border: 0.5px solid black; 
+    .input-lg{
+        margin-top: 25rem;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 25px 20px;
+        margin: 25px;
+        width: 750px;
+        gap:25px;
+    
+    
+    }
+}
+
+/*   <form class="" name="form_contact" action="mail.php" enctype="multipart/form-data" method="post">
+    <div class="input-container">
+        <input  name="nombre" class="input-lg" placeholder="* Apellido y Nombre" value="" required="">
+        <input  name="empresa" class="input-lg" placeholder="* Empresa" value="" required="">
+        <input  name="email" class="input-lg" placeholder="* Mail" value="" required="">
+        <input  name="telefono" class="input-lg" placeholder="* Tel" value="" required="">
+        <input  name="asunto" class="input-lg" placeholder="* Asunto" value="" required="">
+        <input  name="localidad" class="input-lg" placeholder="* Localidad" value="" required="">
+    </div>
+    <h6>(*) Campos obligatorios</h6>
+    <textarea  name="mensaje" class="button-enviar" placeholder="Mensaje" value="" required=""></textarea>
+    <div class="button-enviar">
+        <input id="my_file" class="inputfile" type="file" name="my_file">
+        <label for="my_file" class="btn-lg bg-gris-intermedio uppercase w-50" style="border-radius: 50px;justify-content: center;
+                height: 2.25rem;font-size: 0.7rem;font-weight: 900;display: flex;align-items: center;cursor: pointer;">Adjuntar Archivo</label>
+        <button class="btn-formulario" id="btn-send" name="submit" type="submit" onclick="return validarFormulario()">Enviar</button>
+        <div class="loader" id="loaderAA"></div>
+    </div>
+    </form>
+
+*/
