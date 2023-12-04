@@ -30,14 +30,16 @@
             height: 50px;
 
         }
+        h1{
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            align-self: center;
+            font-family: initial;
+            color: white;
+        }
 }
-h1{
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    align-self: center;
-    font-family: initial;
-}
+
 .ordenador{
     display: flex;
     flex-direction: row;
@@ -79,31 +81,6 @@ h1{
         }
     }
 }
-.p-img{
-    height: 750px;
-    display: flex;
-    flex-wrap: wrap;
-    img{
-        width: 500px;
-        height: 500px;
-        padding: 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        align-self: center;
-    }
-}
-.overlay-text {
-    position: relative;
-    top:30%;
-    left: 25%; 
-    transform: translate;
-    color: white;
-    font-size: 64px;
-    background: rgba(0, 0, 0, 0.5); 
-    padding: 10px;
-  }
 .title{
     width: 100%;
     display: flex;
@@ -116,46 +93,163 @@ h1{
 }
 .frente{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 20px;
-    margin: 25px;
-    background-color: #f3f3f3;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
     .img_inicio{
         margin: 20px;
         padding: 20px;
         display: flex;
-        flex-direction: column;
-        .img-modi{
-            width: 650px;
+        flex-wrap: wrap;
+        .img{
+            width:550px;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             .p{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 padding: 25px;
-                width:450px;
-                height: 250px;
-                background-color: #F5F7F8;
+                background-color: #f5f7f859;
+                color: #0C356A;
+            }
+        }
+        h3{
+            height: auto;
+            display: flex;
+            align-self: center;
+            margin-left: -50rem;
+            color: #000000;
+            background-color: #f3f3f3b0;
+            justify-content: center;
+            padding: 20px;
+            gap:35px;
+        }
+    }
+}
+.img-descrip{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    .img-descrip1{
+        width: 100%;
+        height: 950px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .text-descrip{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding: 50px;
+    margin-top: -2rem;
+        p{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: -38rem;
+            color: rgb(255, 255, 255);
+            padding: 25px;
+            font-size: 25px;
+            width: 650px;
+            height: 700px;
+            background-color: rgba(12, 53, 106, 0.719);
+            font-size: 30px;
+            height: auto;   
+        }
+    }
+   
+
+}
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f3f3f3;
+    img{
+        height: 350px;
+        justify-content: center;
+        margin: 20px;
+        margin-top: 5rem;
+
+    }
+    .datos-catalogo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 350px;  
+        justify-content: center;
+        padding: 20px;
+        h4{
+            display: flex;
+            flex-wrap: wrap;
+            background-color:rgba(12, 53, 106, 0.719);
+            
+            padding: 20px;
+            justify-content: center;
+            color: white;
+        }
+        p{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 10px;
+        }
+    }
+}
+//Footer
+.pie{
+    background-color: #0000002c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;      
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    .datos{
+        display: flex;
+        flex-direction: row;
+        margin: 20px auto;
+        padding: 30px;
+        gap:50px;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        p{
+            display: flex;
+            flex-wrap: wrap;
+            text-decoration: none;
+            list-style: none;
+            color: black;
+            gap:50px;
+            padding: 20px;
+            font-size: 30px;
+            justify-content: space-around;
+            a{
+                list-style: none;
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: #0C356A;
+                }
+                
             }
         }
     }
-    .text{
-        display: flex;
-        flex-direction: row;
-        p{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            padding: 25px;
-            width:350px;
-            background-color: #F5F7F8;
-        }
-    }
-
 }
 
-// È qui che inizia la parte dei prodotti
+// Productos
 .tarjetas{
     margin: 20px;
     display: flex;
@@ -163,7 +257,7 @@ h1{
     flex-direction: row;
     justify-content: start;
     .mercaderia{
-        margin: 30px;
+        margin: 30px auto;
         background-color: #F5F7F8;
         width:500px;
         height: 600px;
@@ -174,7 +268,7 @@ h1{
         border: 2px solid black;
         box-shadow:10px 10px 10px #585b61;
             img{
-                padding: 10px;
+                border: 1px solid black;
                 height: 250px;
                 width: 300px;
                 align-self: center;
@@ -185,6 +279,7 @@ h1{
                 cursor: pointer;
                 &:hover{
                     transform: scale(1.2);
+                    box-shadow:10px 10px 10px #585b61;
                 }
             }
             p{
@@ -233,25 +328,3 @@ h1{
     
     }
 }
-
-/*   <form class="" name="form_contact" action="mail.php" enctype="multipart/form-data" method="post">
-    <div class="input-container">
-        <input  name="nombre" class="input-lg" placeholder="* Apellido y Nombre" value="" required="">
-        <input  name="empresa" class="input-lg" placeholder="* Empresa" value="" required="">
-        <input  name="email" class="input-lg" placeholder="* Mail" value="" required="">
-        <input  name="telefono" class="input-lg" placeholder="* Tel" value="" required="">
-        <input  name="asunto" class="input-lg" placeholder="* Asunto" value="" required="">
-        <input  name="localidad" class="input-lg" placeholder="* Localidad" value="" required="">
-    </div>
-    <h6>(*) Campos obligatorios</h6>
-    <textarea  name="mensaje" class="button-enviar" placeholder="Mensaje" value="" required=""></textarea>
-    <div class="button-enviar">
-        <input id="my_file" class="inputfile" type="file" name="my_file">
-        <label for="my_file" class="btn-lg bg-gris-intermedio uppercase w-50" style="border-radius: 50px;justify-content: center;
-                height: 2.25rem;font-size: 0.7rem;font-weight: 900;display: flex;align-items: center;cursor: pointer;">Adjuntar Archivo</label>
-        <button class="btn-formulario" id="btn-send" name="submit" type="submit" onclick="return validarFormulario()">Enviar</button>
-        <div class="loader" id="loaderAA"></div>
-    </div>
-    </form>
-
-*/

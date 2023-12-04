@@ -31,13 +31,13 @@
   width: 150px;
   height: 50px;
 }
-
-h1 {
+.inicio h1 {
   margin: 10px;
   padding: 20px;
   text-align: center;
   align-self: center;
   font-family: initial;
+  color: white;
 }
 
 .ordenador {
@@ -83,33 +83,6 @@ h1 {
   color: #585b61;
 }
 
-.p-img {
-  height: 750px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.p-img img {
-  width: 500px;
-  height: 500px;
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  align-self: center;
-}
-
-.overlay-text {
-  position: relative;
-  top: 30%;
-  left: 25%;
-  transform: translate;
-  color: white;
-  font-size: 64px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-}
-
 .title {
   width: 100%;
   display: flex;
@@ -123,42 +96,157 @@ h1 {
 
 .frente {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 20px;
-  margin: 25px;
-  background-color: #f3f3f3;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .frente .img_inicio {
   margin: 20px;
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
-.frente .img_inicio .img-modi {
+.frente .img_inicio .img {
+  width: 550px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.frente .img_inicio .img .p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 25px;
+  background-color: rgba(245, 247, 248, 0.3490196078);
+  color: #0C356A;
+}
+.frente .img_inicio h3 {
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-left: -50rem;
+  color: #000000;
+  background-color: rgba(243, 243, 243, 0.6901960784);
+  justify-content: center;
+  padding: 20px;
+  gap: 35px;
+}
+
+.img-descrip {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+.img-descrip .img-descrip1 {
+  width: 100%;
+  height: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.img-descrip .text-descrip {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 50px;
+  margin-top: -2rem;
+}
+.img-descrip .text-descrip p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: -38rem;
+  color: rgb(255, 255, 255);
+  padding: 25px;
+  font-size: 25px;
   width: 650px;
+  height: 700px;
+  background-color: rgba(12, 53, 106, 0.719);
+  font-size: 30px;
+  height: auto;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f3f3f3;
+}
+.catalogo img {
+  height: 350px;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 5rem;
+}
+.catalogo .datos-catalogo {
   display: flex;
   flex-direction: column;
-}
-.frente .img_inicio .img-modi .p {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  padding: 25px;
-  width: 450px;
-  height: 250px;
-  background-color: #F5F7F8;
-}
-.frente .text {
-  display: flex;
-  flex-direction: row;
-}
-.frente .text p {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 25px;
   width: 350px;
-  background-color: #F5F7F8;
+  justify-content: center;
+  padding: 20px;
+}
+.catalogo .datos-catalogo h4 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(12, 53, 106, 0.719);
+  padding: 20px;
+  justify-content: center;
+  color: white;
+}
+.catalogo .datos-catalogo p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 10px;
+}
+
+.pie {
+  background-color: rgba(0, 0, 0, 0.1725490196);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.pie .datos {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  padding: 30px;
+  gap: 50px;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.pie .datos p {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  gap: 50px;
+  padding: 20px;
+  font-size: 30px;
+  justify-content: space-around;
+}
+.pie .datos p a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+.pie .datos p a:hover {
+  color: #0C356A;
 }
 
 .tarjetas {
@@ -169,7 +257,7 @@ h1 {
   justify-content: start;
 }
 .tarjetas .mercaderia {
-  margin: 30px;
+  margin: 30px auto;
   background-color: #F5F7F8;
   width: 500px;
   height: 600px;
@@ -181,7 +269,7 @@ h1 {
   box-shadow: 10px 10px 10px #585b61;
 }
 .tarjetas .mercaderia img {
-  padding: 10px;
+  border: 1px solid black;
   height: 250px;
   width: 300px;
   align-self: center;
@@ -193,6 +281,7 @@ h1 {
 }
 .tarjetas .mercaderia img:hover {
   transform: scale(1.2);
+  box-shadow: 10px 10px 10px #585b61;
 }
 .tarjetas .mercaderia p {
   font-family: "Nunito", sans-serif;
@@ -235,27 +324,5 @@ h1 {
   width: 750px;
   gap: 25px;
 }
-
-/*   <form class="" name="form_contact" action="mail.php" enctype="multipart/form-data" method="post">
-    <div class="input-container">
-        <input  name="nombre" class="input-lg" placeholder="* Apellido y Nombre" value="" required="">
-        <input  name="empresa" class="input-lg" placeholder="* Empresa" value="" required="">
-        <input  name="email" class="input-lg" placeholder="* Mail" value="" required="">
-        <input  name="telefono" class="input-lg" placeholder="* Tel" value="" required="">
-        <input  name="asunto" class="input-lg" placeholder="* Asunto" value="" required="">
-        <input  name="localidad" class="input-lg" placeholder="* Localidad" value="" required="">
-    </div>
-    <h6>(*) Campos obligatorios</h6>
-    <textarea  name="mensaje" class="button-enviar" placeholder="Mensaje" value="" required=""></textarea>
-    <div class="button-enviar">
-        <input id="my_file" class="inputfile" type="file" name="my_file">
-        <label for="my_file" class="btn-lg bg-gris-intermedio uppercase w-50" style="border-radius: 50px;justify-content: center;
-                height: 2.25rem;font-size: 0.7rem;font-weight: 900;display: flex;align-items: center;cursor: pointer;">Adjuntar Archivo</label>
-        <button class="btn-formulario" id="btn-send" name="submit" type="submit" onclick="return validarFormulario()">Enviar</button>
-        <div class="loader" id="loaderAA"></div>
-    </div>
-    </form>
-
-*/
 
 /*# sourceMappingURL=styles.css.map */
