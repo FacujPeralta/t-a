@@ -8,43 +8,24 @@
 .inicio {
   background-color: #0C356A;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .inicio img {
   width: 150px;
   height: 150px;
   padding: 20px;
 }
-.inicio button {
-  margin: 10px;
-  padding: 20px 10px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-.inicio .buscador1 {
-  display: flex;
-  align-items: center;
-  align-self: center;
-  width: 150px;
-  height: 50px;
-}
 .inicio h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
   margin: 10px;
   padding: 20px;
-  text-align: center;
-  align-self: center;
   font-family: initial;
   color: white;
-}
-
-.ordenador {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: end;
 }
 
 .navegador {
@@ -210,7 +191,7 @@
 }
 
 .pie {
-  background-color: rgba(0, 0, 0, 0.1725490196);
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -218,27 +199,30 @@
   text-decoration: none;
   list-style: none;
   color: black;
+  justify-content: center;
+  align-content: center;
 }
 .pie .datos {
   display: flex;
   flex-direction: row;
-  margin: 20px auto;
-  padding: 30px;
+  justify-content: start;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
   gap: 50px;
   text-decoration: none;
   list-style: none;
   color: black;
 }
 .pie .datos p {
+  height: 150px;
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
   list-style: none;
   color: black;
-  gap: 50px;
-  padding: 20px;
   font-size: 30px;
-  justify-content: space-around;
+  justify-content: end;
 }
 .pie .datos p a {
   list-style: none;
@@ -247,6 +231,16 @@
 }
 .pie .datos p a:hover {
   color: #0C356A;
+}
+
+.derechos {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: center;
+  align-self: center;
+  margin-top: -5rem;
+  background-color: #f3f3f3;
 }
 
 .tarjetas {
