@@ -1,3 +1,4 @@
+@import url(./phone.scss);
 * {
   padding: 0px;
   margin: 0px;
@@ -144,7 +145,6 @@
   margin-top: -38rem;
   color: rgb(255, 255, 255);
   padding: 25px;
-  font-size: 25px;
   width: 650px;
   height: 700px;
   background-color: rgba(12, 53, 106, 0.719);
@@ -190,15 +190,113 @@
   padding: 10px;
 }
 
+@media (max-width: 750px) {
+  .inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px;
+  }
+  .inicio h1 {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .inicio img {
+    width: 150px;
+    height: 150px;
+  }
+  .navegador {
+    display: flex;
+    flex-direction: row;
+  }
+  .navegador ul {
+    padding: 0px;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+  }
+  .navegador ul li a {
+    padding: 5px;
+    border: 1px solid #6f6767;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px #6f6767;
+  }
+  .frente {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+  }
+  .frente .img_inicio {
+    margin: 5px;
+    padding: 5px;
+  }
+  .frente .img_inicio img {
+    width: 350px;
+    height: 250px;
+  }
+  .frente .img_inicio p {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+  .frente .img_inicio h3 {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 150px;
+    margin-top: -10rem;
+    margin-left: 0px;
+    background-color: rgba(111, 103, 103, 0.6392156863);
+    padding: 5px;
+    color: white;
+    box-shadow: 1px 5px 5px #000000;
+    gap: 0px;
+    font-size: 15px;
+  }
+  .img-descrip {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+  }
+  .img-descrip .img-descrip1 {
+    display: none;
+  }
+  .img-descrip .text-descrip {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 250px;
+    margin-top: 55rem;
+    padding: 3px;
+    font-size: 10px;
+    gap: 3px;
+  }
+  .img-descrip .text-descrip .p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 5px;
+    padding: 5px;
+    width: 250px;
+    margin-top: 0px;
+  }
+}
 .pie {
-  background-color: #f3f3f3;
+  background-color: #6f6767;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 20px;
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: white;
   justify-content: center;
   align-content: center;
 }
@@ -220,14 +318,15 @@
   flex-wrap: wrap;
   text-decoration: none;
   list-style: none;
-  color: black;
+  color: rgb(141, 141, 141);
   font-size: 30px;
   justify-content: end;
 }
 .pie .datos p a {
+  font-size: 35px;
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .pie .datos p a:hover {
   color: #0C356A;
@@ -240,7 +339,13 @@
   justify-content: center;
   align-self: center;
   margin-top: -5rem;
-  background-color: #f3f3f3;
+  background-color: #6f6767;
+  color: white;
+}
+
+.fa-brands {
+  text-decoration: none;
+  list-style: none;
 }
 
 .tarjetas {
@@ -297,26 +402,55 @@
   background-color: #AEDEFC;
 }
 
-.formulario-contacto {
+.informacion {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 25rem;
-  margin: 15px auto;
-  padding: 25px;
-  background-color: #f3f3f3;
-  width: 800px;
-  height: 850px;
-  border: 0.5px solid black;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 950px;
+  background-color: #F5F7F8;
+  box-shadow: 10px 20px 10px 10px #6f6767;
+  margin-bottom: 30px;
 }
-.formulario-contacto .input-lg {
-  margin-top: 25rem;
+.informacion .datos-informacion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.informacion .datos-informacion h2 {
+  background-color: #0C356A;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 25px;
+}
+.informacion .datos-informacion h5 {
   display: flex;
   flex-wrap: wrap;
-  padding: 25px 20px;
-  margin: 25px;
-  width: 750px;
-  gap: 25px;
+  font-size: large;
+  justify-content: start;
+  text-align: start;
+  margin: 20px;
+  padding: 30px;
+  color: white;
+  background-color: #0C356A;
+  border: 5px solid #0C356A;
+  border-radius: 10px;
+}
+.informacion .datos-informacion p {
+  text-align: start;
+  margin: 20px;
+  font-size: 25px;
+}
+.informacion .datos-informacion img {
+  width: 450px;
+  height: 450px;
+  align-self: center;
+  border: 5px solid #0C356A;
+  border-radius: 3px;
+  box-shadow: 10px 10px 10px #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */
