@@ -291,7 +291,7 @@ body {
     flex-direction: column;
     padding: 2px;
     margin: 2px;
-    font-size: 10px;
+    font-size: 5px;
   }
   .pie .datos {
     display: flex;
@@ -317,8 +317,6 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 0px;
-    padding: 5px;
   }
   .informacion .datos-informacion {
     width: 300px;
@@ -349,9 +347,13 @@ body {
     display: none;
   }
   .title {
-    margin: 10px;
+    width: 250px;
     padding: 5px;
-    font-size: 10px;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
 }
 .pie {
@@ -416,9 +418,9 @@ body {
 
 .title {
   background-color: #4e87d1;
-  padding: 2rem;
+  padding: 30px;
   color: white;
-  margin: 3rem;
+  margin: 15px;
 }
 
 .tarjetas {
