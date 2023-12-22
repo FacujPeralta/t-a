@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@1,300 & family= Oswald:wght@400;500;600;700 & family= Playfair+Display: ital@1 & family= Poppins:wght@400;500;600;700;800 & family= Quicksand:wght@300;500 & family= Raleway & family= Titillium+Web:ital,wght@1,200 & display=swap');
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: initial;
+}
+body{
+    font-family: 'montserrat' 'ital';
 }
 .inicio{
     background-color: #0C356A;
@@ -237,10 +241,8 @@
                 display: flex;
                 flex-direction: row;
                 padding: 5px;
-                
             }
             h3{
-            
                 display: flex;
                 align-items: center;
                 width: 250px;
@@ -255,7 +257,6 @@
                 font-size: 15px;
             }
         }
-       
     }
     .img-descrip{
         display: none;
@@ -285,8 +286,9 @@
     .pie{
         display: flex;
         flex-direction: column;
-        padding: 3px;
-        margin: 5px;
+        padding: 2px;
+        margin: 2px;
+        font-size: 10px;
         .datos{
             display: flex;
             flex-direction: column;
@@ -294,7 +296,6 @@
             padding: 5px;
             gap: 0px;
         }
-
     }
     .derechos{
         display: flex;
@@ -340,12 +341,16 @@
                 font-size: 10px;
             }
             img{
-                display: flex;
-                flex-wrap: wrap;
+                display: none;
                 
             }
         }
 
+    }
+    .title{
+        margin: 10px;
+        padding: 5px;
+        font-size: 10px;
     }
 }
 //Footer
@@ -411,6 +416,12 @@
 
 
 // Productos
+.title{
+    background-color: #4e87d1;
+    padding: 2rem;
+    color: white;
+    margin: 3rem;
+}
 .tarjetas{
     margin: 20px;
     display: flex;
