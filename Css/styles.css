@@ -1,4 +1,3 @@
-@import url(./phone.scss);
 * {
   padding: 0px;
   margin: 0px;
@@ -258,34 +257,91 @@
     font-size: 15px;
   }
   .img-descrip {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 250px;
-    height: 250px;
-    padding: 20px;
-  }
-  .img-descrip .img-descrip1 {
     display: none;
   }
-  .img-descrip .text-descrip {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 250px;
-    margin-top: 55rem;
-    padding: 3px;
-    font-size: 10px;
-    gap: 3px;
-  }
-  .img-descrip .text-descrip .p {
+  .catalogo {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 5px;
+    width: 300px;
     padding: 5px;
-    width: 250px;
-    margin-top: 0px;
+    background-color: #f3f3f3;
+  }
+  .catalogo img {
+    display: none;
+  }
+  .catalogo .datos-catalogo {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    border: 1px solid black;
+  }
+  .catalogo .datos-catalogo .p {
+    background-color: #f3f3f3;
+  }
+  .pie {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    margin: 5px;
+  }
+  .pie .datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 0px;
+  }
+  .derechos {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+  }
+}
+@media (max-width: 767px) {
+  .informacion {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 5px;
+  }
+  .informacion .datos-informacion {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .informacion .datos-informacion h2 {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .informacion .datos-informacion h5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+  }
+  .informacion .datos-informacion p {
+    width: 300px;
+    text-align: center;
+    margin: 5px;
+    font-size: 10px;
+  }
+  .informacion .datos-informacion img {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .pie {
