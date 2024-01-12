@@ -11,7 +11,7 @@ body {
 }
 
 .inicio {
-  background-color: #0C356A;
+  background-color: #064290;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -440,6 +440,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   border: 2px solid black;
+  border-radius: 10px;
   box-shadow: 10px 10px 10px #585b61;
 }
 .tarjetas .mercaderia img {
