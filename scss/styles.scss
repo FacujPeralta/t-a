@@ -3,7 +3,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: initial;
+    font-family: initial, serif;
 }
 body{
     font-family: 'montserrat' 'ital';
@@ -31,7 +31,7 @@ body{
     }
 }
 .navegador{
-    height: 170px;
+    height:100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -40,11 +40,11 @@ body{
     width: 100%;
     background-color: #f3f3f3;
     ul{
+        margin-top: -40px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         padding: 20px;
-        margin: 10px;
         list-style: none;
         text-decoration: none;
         text-align: center;
@@ -310,10 +310,11 @@ body{
 }
 @media(max-width:767px){
     .informacion{
-        width: 350px;
+        margin-top: -30px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        border: none;
         .datos-informacion{
             width: 300px;
             display: flex;
@@ -421,8 +422,10 @@ body{
     margin: 15px;
 }
 .tarjetas{
-    margin: 20px;
-    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: start;
@@ -474,6 +477,7 @@ body{
             }
     }
 }
+
 //Parte Contactos
 .informacion{
     display: flex;
@@ -486,7 +490,8 @@ body{
     width: 950px;
     background-color: #F5F7F8;
     box-shadow: 10px 20px 10px 10px #6f6767;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     .datos-informacion{
         display: flex;
         flex-direction: column;
@@ -524,4 +529,14 @@ body{
             box-shadow: 10px 10px 10px #000000;
         }
     }
+}
+.map{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 10px auto;
+    border: 3px solid black;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
