@@ -121,7 +121,6 @@ body {
 
 .img-descrip {
   width: 100%;
-  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -162,10 +161,10 @@ body {
   flex-direction: row;
   width: 100%;
   padding: 20px;
-  margin: 10px;
   background-color: #f3f3f3;
 }
 .catalogo img {
+  border: 3px solid rgba(12, 53, 106, 0.719);
   height: 350px;
   justify-content: center;
   margin: 20px;
@@ -268,8 +267,9 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 300px;
-    padding: 5px;
+    width: 360px;
+    padding: 12px;
+    margin: 10px;
     background-color: #f3f3f3;
   }
   .catalogo img {
